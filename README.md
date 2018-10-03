@@ -1,6 +1,6 @@
-#EasyWay
+# EasyWay
 
-##ELTE Indoor Navigator
+## ELTE Indoor Navigator
 
 *Mobile application for navigation in "ELTE" buildings.*
 
