@@ -28,6 +28,10 @@ configurations {
 	providedRuntime
 }
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 	implementation('org.springframework.boot:spring-boot-starter-web')
@@ -35,5 +39,8 @@ dependencies {
 	runtimeOnly('mysql:mysql-connector-java')
 	compileOnly('org.projectlombok:lombok')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	runtimeOnly('mysql:mysql-connector-java')
+	compile group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
 }
+
