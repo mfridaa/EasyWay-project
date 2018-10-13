@@ -8,8 +8,13 @@ import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
+
+import com.easyway.backend.Test;
 
 @Component
 public class ClassroomInformationFetcher {
@@ -18,6 +23,8 @@ public class ClassroomInformationFetcher {
 	
 	private String classroomActivityInfoUrl = "http://to.ttk.elte.hu/test.php";
 	private String classroomNameUrl = "http://to.ttk.elte.hu/teremfoglaltsagi-adatok";
+	
+	public String resultString;
 	
 	private ArrayList<NameValuePair> requestParams = new ArrayList<NameValuePair>() {{
 	    add(new NameValuePair("melyik", "terem_del"));
@@ -28,6 +35,7 @@ public class ClassroomInformationFetcher {
 	
 	public void fetchNewDataAndSaveToDatabase() {
 		String nameUrlPostResult = fetchData(classroomNameUrl, null);
+		resultString = nameUrlPostResult;
 		List<NameValuePair> roomDetails = parseClassroomStrin(nameUrlPostResult);
 		for(NameValuePair pair : roomDetails) {
 			logger.info(pair.getName() + " " + pair.getValue());
@@ -36,7 +44,25 @@ public class ClassroomInformationFetcher {
 	}
 	
 	private List<NameValuePair> parseClassroomStrin(String classroomString){
-		return new ArrayList<>();
+		List<NameValuePair> result = new ArrayList<>();
+		Document document = Jsoup.parse(classroomString);
+		
+		result.addAll(getClassRooms("eszaki", document));
+		result.addAll(getClassRooms("deli", document));
+		result.addAll(getClassRooms("kemia", document));
+
+		return result;
+	}
+	
+	private List<NameValuePair> getClassRooms(String buildingString, Document document){
+		List<NameValuePair> result = new ArrayList<>();
+		
+		Element classRooms = document.getElementById(buildingString);
+	    for(Element classRoom : classRooms.children()){
+	    	result.add(new NameValuePair(classRoom.val(), classRoom.text()));
+	    }
+		
+		return result;
 	}
 	
 	private String fetchData(String pageUrl,@Nullable List<NameValuePair> requestParams) {

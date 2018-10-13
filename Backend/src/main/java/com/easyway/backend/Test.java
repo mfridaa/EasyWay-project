@@ -15,7 +15,7 @@ public class Test {
 	@RequestMapping("test")
 	public String test(){
 		fetcher.fetchNewDataAndSaveToDatabase();
-		return "Hello Levi a király";
+		return fetcher.resultString;
 		
 	}
 }
