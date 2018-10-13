@@ -4,13 +4,15 @@ import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="lesson")
+@Table(name="Lesson")
 public class Lesson {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -24,6 +26,8 @@ public class Lesson {
 	
 	@Column(name = "name")
 	private String name;
+	
+	
 	
 	public Lesson(Timestamp start, Timestamp end, String name) {
 		super();

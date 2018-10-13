@@ -11,18 +11,33 @@ import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import com.easyway.backend.Test;
+import com.easyway.backend.dao.BuildingRepository;
+import com.easyway.backend.dao.RoomRepository;
+import com.easyway.backend.entity.Building;
+import com.easyway.backend.entity.Room;
 
 @Component
 public class ClassroomInformationFetcher {
+	
+	@Autowired
+	BuildingRepository buildingRepository;
+	
+	@Autowired
+	RoomRepository roomRepository;
 	
 	private static final Logger logger = LogManager.getLogger();
 	
 	private String classroomActivityInfoUrl = "http://to.ttk.elte.hu/test.php";
 	private String classroomNameUrl = "http://to.ttk.elte.hu/teremfoglaltsagi-adatok";
+	
+	private final String NORTBUILDING = "eszaki";
+	private final String SOUTHBILDING = "deli";
+	private final String CHEMICBUILDING = "kemia";
 	
 	public String resultString;
 	
@@ -36,33 +51,29 @@ public class ClassroomInformationFetcher {
 	public void fetchNewDataAndSaveToDatabase() {
 		String nameUrlPostResult = fetchData(classroomNameUrl, null);
 		resultString = nameUrlPostResult;
-		List<NameValuePair> roomDetails = parseClassroomStrin(nameUrlPostResult);
-		for(NameValuePair pair : roomDetails) {
-			logger.info(pair.getName() + " " + pair.getValue());
-		}
-		
-	}
-	
-	private List<NameValuePair> parseClassroomStrin(String classroomString){
-		List<NameValuePair> result = new ArrayList<>();
-		Document document = Jsoup.parse(classroomString);
-		
-		result.addAll(getClassRooms("eszaki", document));
-		result.addAll(getClassRooms("deli", document));
-		result.addAll(getClassRooms("kemia", document));
+		processClassroomStrin(nameUrlPostResult);
 
-		return result;
 	}
 	
-	private List<NameValuePair> getClassRooms(String buildingString, Document document){
-		List<NameValuePair> result = new ArrayList<>();
-		
+	private void processClassroomStrin(String classroomString){
+		Document document = Jsoup.parse(classroomString);
+		getClassRoomsAndSaveToDatabase(NORTBUILDING,document);
+		getClassRoomsAndSaveToDatabase(SOUTHBILDING,document);
+		getClassRoomsAndSaveToDatabase(CHEMICBUILDING,document);
+	}
+	
+	private void getClassRoomsAndSaveToDatabase(String buildingString, Document document){
 		Element classRooms = document.getElementById(buildingString);
+		Building building = new Building(gateNameOfBuilding(buildingString));
+
 	    for(Element classRoom : classRooms.children()){
-	    	result.add(new NameValuePair(classRoom.val(), classRoom.text()));
+	    		Room roomToAppend = new Room(Integer.parseInt(classRoom.val()), classRoom.text());
+	    		roomToAppend.setBuilding(building);
+	    		roomRepository.save(roomToAppend);
+	    		building.addClassroom(roomToAppend);
 	    }
+	    buildingRepository.save(building);
 		
-		return result;
 	}
 	
 	private String fetchData(String pageUrl,@Nullable List<NameValuePair> requestParams) {
@@ -78,7 +89,6 @@ public class ClassroomInformationFetcher {
 				postMethod.addParameters(params);
 			}
 			client.executeMethod(postMethod);
-			postMethod.getResponseBodyAsStream();
 			result = postMethod.getResponseBodyAsString();
 		} catch (Exception e) {
 			logger.error(e);
@@ -87,6 +97,25 @@ public class ClassroomInformationFetcher {
 		}
 		logger.info("Answer from " + pageUrl + " recived (" + result.length() +" characters)");
 		return result;
+	}
+	
+	
+	private String gateNameOfBuilding(String building) {
+		String name = "";
+		switch (building){
+		case SOUTHBILDING:
+			name = "Északi épület";
+			break;
+		case NORTBUILDING:
+			name = "Déli épület";
+			break;
+		case CHEMICBUILDING:
+			name = "Kémia épület";
+			break;
+		default:
+			break;
+		}
+		return name;
 	}
 	
 }
