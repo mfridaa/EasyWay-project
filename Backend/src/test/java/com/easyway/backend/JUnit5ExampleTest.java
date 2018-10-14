@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -31,7 +31,7 @@ class JUnit5ExampleTest {
 	private Timestamp end;
 	private String name;
 	
-    @Test
+   /* @Test
     void justAnExample() {
         System.out.println("This test method should be run");
     }
@@ -46,5 +46,5 @@ class JUnit5ExampleTest {
 		Lesson savedFacebookData = this.entityManager.persistAndFlush(lesson);
 		assertThat(savedFacebookData.getName()).isEqualTo("Online");
 
-	}
+	}*/
 }

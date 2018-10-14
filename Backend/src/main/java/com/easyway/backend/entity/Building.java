@@ -32,8 +32,6 @@ public class Building {
 		this.classrooms = classrooms;
 	}
 
-
-
 	@OneToMany(mappedBy="building")
 	private List<Room> classrooms = new ArrayList<>();
 	

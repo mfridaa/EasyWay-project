@@ -51,15 +51,15 @@ public class ClassroomInformationFetcher {
 	public void fetchNewDataAndSaveToDatabase() {
 		String nameUrlPostResult = fetchData(classroomNameUrl, null);
 		resultString = nameUrlPostResult;
-		processClassroomStrin(nameUrlPostResult);
+		processClassroomString(nameUrlPostResult);
 
 	}
 	
-	private void processClassroomStrin(String classroomString){
+	private void processClassroomString(String classroomString){
 		Document document = Jsoup.parse(classroomString);
-		getClassRoomsAndSaveToDatabase(NORTBUILDING,document);
-		getClassRoomsAndSaveToDatabase(SOUTHBILDING,document);
-		getClassRoomsAndSaveToDatabase(CHEMICBUILDING,document);
+		getClassRoomsAndSaveToDatabase(NORTBUILDING, document);
+		getClassRoomsAndSaveToDatabase(SOUTHBILDING, document);
+		getClassRoomsAndSaveToDatabase(CHEMICBUILDING, document);
 	}
 	
 	private void getClassRoomsAndSaveToDatabase(String buildingString, Document document){
@@ -76,7 +76,7 @@ public class ClassroomInformationFetcher {
 		
 	}
 	
-	private String fetchData(String pageUrl,@Nullable List<NameValuePair> requestParams) {
+	private String fetchData(String pageUrl, @Nullable List<NameValuePair> requestParams) {
 		String result = "";
 		HttpClient client = new HttpClient();
 		PostMethod postMethod = new PostMethod(pageUrl);
