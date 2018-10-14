@@ -18,11 +18,17 @@ public class Lesson {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
+	@Column(name = "day")
+	private String day;
+	
 	@Column(name = "start")
-	private Timestamp start;
+	private String start;
 	
 	@Column(name = "end")
-	private Timestamp end;
+	private String end;
+	
+	@Column(name = "weeks")
+	private String weeks;
 	
 	@Column(name = "name")
 	private String name;
@@ -33,11 +39,13 @@ public class Lesson {
 	@ManyToOne(fetch=FetchType.LAZY)
 	private Teacher teacher;
 	
-	public Lesson(Timestamp start, Timestamp end, String name) {
+	public Lesson(String day, String start, String end, String name, String weeks) {
 		super();
+		this.day = day;
 		this.start = start;
 		this.end = end;
 		this.name = name;
+		this.weeks = weeks;
 	}
 
 	public String getName() {
@@ -52,19 +60,19 @@ public class Lesson {
 		this.id = id;
 	}
 
-	public Timestamp getStart() {
+	public String getStart() {
 		return start;
 	}
 
-	public void setStart(Timestamp start) {
+	public void setStart(String start) {
 		this.start = start;
 	}
 
-	public Timestamp getEnd() {
+	public String getEnd() {
 		return end;
 	}
 
-	public void setEnd(Timestamp end) {
+	public void setEnd(String end) {
 		this.end = end;
 	}
 
@@ -86,5 +94,21 @@ public class Lesson {
 	
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+
+	public String getWeeks() {
+		return weeks;
+	}
+
+	public void setWeeks(String weeks) {
+		this.weeks = weeks;
 	}
 }

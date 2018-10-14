@@ -1,7 +1,9 @@
 package com.easyway.backend.utilities;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.NameValuePair;
@@ -11,15 +13,20 @@ import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import com.easyway.backend.Test;
 import com.easyway.backend.dao.BuildingRepository;
+import com.easyway.backend.dao.LessonRepository;
 import com.easyway.backend.dao.RoomRepository;
+import com.easyway.backend.dao.TeacherRepository;
 import com.easyway.backend.entity.Building;
+import com.easyway.backend.entity.Lesson;
 import com.easyway.backend.entity.Room;
+import com.easyway.backend.entity.Teacher;
 
 @Component
 public class ClassroomInformationFetcher {
@@ -29,6 +36,12 @@ public class ClassroomInformationFetcher {
 	
 	@Autowired
 	RoomRepository roomRepository;
+	
+	@Autowired
+	TeacherRepository teacherRepository;
+	
+	@Autowired
+	LessonRepository lessonRepository;
 	
 	private static final Logger logger = LogManager.getLogger();
 	
@@ -64,7 +77,7 @@ public class ClassroomInformationFetcher {
 	
 	private void getClassRoomsAndSaveToDatabase(String buildingString, Document document){
 		Element classRooms = document.getElementById(buildingString);
-		Building building = new Building(gateNameOfBuilding(buildingString));
+		Building building = new Building(getNameOfBuilding(buildingString));
 
 		buildingRepository.save(building);
 		
@@ -73,8 +86,81 @@ public class ClassroomInformationFetcher {
 	    		roomToAppend.setBuilding(building);
 	    		roomRepository.save(roomToAppend);
 	    		building.addClassroom(roomToAppend);
+	    		String lessonData = fetchData(classroomActivityInfoUrl, getRequestParams(getRoomNameOfBuilding(buildingString), classRoom.val()));
+	    		saveLessons(lessonData, roomToAppend);
 	    }
+		
+	}
+	
+	private List<NameValuePair> getRequestParams(String building, String id) {
+		List<NameValuePair> requestParams = new ArrayList<>();
+		
+		requestParams.add(new NameValuePair("melyik", building));
+		requestParams.add(new NameValuePair("felev", "2018-2019-1"));
+		requestParams.add(new NameValuePair("limit", "1000"));
+		requestParams.add(new NameValuePair("teremazon", id));
 	    
+		return requestParams;
+	}
+	
+	private void saveLessons(String data, Room room) {
+		Document document = Jsoup.parse(data);
+		Elements rows = document.select("tr");
+
+		for(Element row : rows) {
+			Elements columns = row.select("td");
+
+			if(columns.size() > 3 && columns.get(3).text().split(" ").length == 2) {
+
+				Teacher teacher = makeTeacher(columns.get(8).text(), columns.get(9).text());
+				try {
+					String day = columns.get(3).text().split(" ")[0];
+					String interval = columns.get(3).text().split(" ")[1];
+					Lesson lesson = new Lesson(day, interval.split("-")[0], interval.split("-")[1], columns.get(4).text(), 
+							columns.get(1).text());
+					lesson.setRoom(room);
+					lesson.setTeacher(teacher);
+					lessonRepository.save(lesson);
+					teacher.addLesson(lesson);
+					room.addLesson(lesson);
+				} catch(Exception e) {
+
+				}
+
+
+			}
+		}
+	}
+	
+	private Teacher makeTeacher(String nameA, String nameB) {
+		Teacher teacher = null;
+		nameA = nameA.split(",")[0];
+		nameB = nameB.split(",")[0];
+		
+		if(teacherRepository.findByName(nameA).isPresent()) {
+			return teacherRepository.findByName(nameA).get();
+		}
+		else if(teacherRepository.findByName(nameB).isPresent()) {
+			return teacherRepository.findByName(nameB).get();
+		}
+		else if(!nameA.equals("")) {
+			teacher = new Teacher(nameA);
+			teacherRepository.save(teacher);
+			return teacher;
+		}
+		else if(!nameB.equals("")) {
+			teacher = new Teacher(nameB);
+			teacherRepository.save(teacher);
+			return teacher;
+		}
+		else if(teacherRepository.findByName("Nobody").isPresent()) {
+			return teacherRepository.findByName("Nobody").get();
+		}
+		else {
+			teacher = new Teacher("Nobody");
+			teacherRepository.save(teacher);
+			return teacher;
+		}
 		
 	}
 	
@@ -97,12 +183,12 @@ public class ClassroomInformationFetcher {
 		} finally {
 			postMethod.releaseConnection();
 		}
-		logger.info("Answer from " + pageUrl + " recived (" + result.length() +" characters)");
+		//logger.info("Answer from " + pageUrl + " recived (" + result.length() +" characters)");
 		return result;
 	}
 	
 	
-	private String gateNameOfBuilding(String building) {
+	private String getNameOfBuilding(String building) {
 		String name = "";
 		switch (building){
 		case SOUTHBILDING:
@@ -113,6 +199,24 @@ public class ClassroomInformationFetcher {
 			break;
 		case CHEMICBUILDING:
 			name = "Kémia épület";
+			break;
+		default:
+			break;
+		}
+		return name;
+	}
+	
+	private String getRoomNameOfBuilding(String building) {
+		String name = "";
+		switch (building){
+		case SOUTHBILDING:
+			name = "terem_eszak";
+			break;
+		case NORTBUILDING:
+			name = "terem_del";
+			break;
+		case CHEMICBUILDING:
+			name = "terem_kemia";
 			break;
 		default:
 			break;
