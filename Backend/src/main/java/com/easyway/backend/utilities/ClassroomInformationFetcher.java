@@ -66,13 +66,15 @@ public class ClassroomInformationFetcher {
 		Element classRooms = document.getElementById(buildingString);
 		Building building = new Building(gateNameOfBuilding(buildingString));
 
+		buildingRepository.save(building);
+		
 	    for(Element classRoom : classRooms.children()){
 	    		Room roomToAppend = new Room(Integer.parseInt(classRoom.val()), classRoom.text());
 	    		roomToAppend.setBuilding(building);
 	    		roomRepository.save(roomToAppend);
 	    		building.addClassroom(roomToAppend);
 	    }
-	    buildingRepository.save(building);
+	    
 		
 	}
 	
