@@ -39,6 +39,8 @@ public class Lesson {
 	@ManyToOne(fetch=FetchType.LAZY)
 	private Teacher teacher;
 	
+	public Lesson() {}
+	
 	public Lesson(String day, String start, String end, String name, String weeks) {
 		super();
 		this.day = day;
