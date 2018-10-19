@@ -86,11 +86,39 @@ public class ClassroomInformationFetcher {
 	    		roomToAppend.setBuilding(building);
 	    		roomRepository.save(roomToAppend);
 	    		building.addClassroom(roomToAppend);
-	    		String lessonData = fetchData(classroomActivityInfoUrl, getRequestParams(getRoomNameOfBuilding(buildingString), classRoom.val()));
+	    		//saveLessonData(getRequestParams(getRoomNameOfBuilding(buildingString), classRoom.val()),roomToAppend);
+	    		String lessonData = fetchData(classroomActivityInfoUrl,(getRequestParams(getRoomNameOfBuilding(buildingString), classRoom.val())));
 	    		saveLessons(lessonData, roomToAppend);
 	    }
 		
 	}
+	
+	
+	
+	
+
+	private void saveLessonData( List<NameValuePair> lessonData, Room roomData) {
+		class Saver implements Runnable{
+			private List<NameValuePair> lessonData;
+			private Room roomData;
+			public Saver(List<NameValuePair> lessonData, Room roomData) {
+				this.lessonData = lessonData;
+				this.roomData = roomData;
+			}
+			
+			@Override
+			public void run() {
+				String fetchedLessonData = fetchData(classroomActivityInfoUrl, lessonData);
+				saveLessons(fetchedLessonData, roomData);
+			}
+			
+		}
+		Thread thread = new Thread(new Saver(lessonData, roomData));
+		thread.start();
+		
+	}
+	
+	
 	
 	private List<NameValuePair> getRequestParams(String building, String id) {
 		List<NameValuePair> requestParams = new ArrayList<>();
@@ -223,5 +251,7 @@ public class ClassroomInformationFetcher {
 		}
 		return name;
 	}
+
+	
 	
 }

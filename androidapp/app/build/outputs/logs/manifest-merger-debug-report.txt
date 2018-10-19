@@ -1,0 +1,194 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4be927bcbbbc1bb67ff69c7feb230496/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1eef967157faba8b4df99163dd018542/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5ae609d4791547d3ac79f1e9d2d42346/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f4e5b61a7c63356fed4f3f361751fda/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0bdf217d698bc75d1ca90b2abbe4da03/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c99c5584b17fd36e7a28cdf48646b1b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9440cc2d9a58bc87fe4c8507323372fa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9eb47c8b9456af66343a9606e5b7b4a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2bc45047f4065dc97c191cd610a9fd38/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/5c7f1e5f6bab16ce91a011dfa6b80b4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c8cf29c7c381b1ff5797a37cdef280db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7adb59239b9cc6b15e6386fa12a93870/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7036aea5844404bdf96e4ef62d30d933/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6b89ad536eda9a32c6b2f8681cc0dcc8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2f15f1e23e1d4d57b42dc156698e927f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7899ff136c1141b61b94f368fc4f28c0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fffe68d8a814a3c86579be33fb4a409b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8ee36b926fae899651253a324940f801/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08a7f0acf5eae3d183b3e1ea7981d46a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c766be9731e97afd1f928e6782e126e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a1801e8dae3672ec7547d0f1677ff069/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4dc84fb84f9b94a2129bbb58ea369d6d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/77e11c0fd28c0dddcbf7441d75f86ecc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/79054f553063609b9d27ca6226f48a3c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2db0e6126e7cdabe5c7e8415d823a821/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/fd78e6702fa379dfdf3f9f49679a218c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c8d59e9c37cb2bd1331c5512b618abba/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:8:22-69
+application
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:10:5-31:19
+MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7899ff136c1141b61b94f368fc4f28c0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7899ff136c1141b61b94f368fc4f28c0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:16:9-40
+activity#easyway.com.androidapp.SplashActivity
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:17:9-26:20
+	android:label
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:19:13-45
+	android:theme
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:20:13-47
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:18:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:24:27-74
+activity#easyway.com.androidapp.MapActivity
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:27:9-49
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:27:19-46
+activity#easyway.com.androidapp.LoginActivity
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:28:9-30:69
+	android:label
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:30:13-57
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:29:13-42
+uses-sdk
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4be927bcbbbc1bb67ff69c7feb230496/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4be927bcbbbc1bb67ff69c7feb230496/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1eef967157faba8b4df99163dd018542/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1eef967157faba8b4df99163dd018542/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5ae609d4791547d3ac79f1e9d2d42346/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5ae609d4791547d3ac79f1e9d2d42346/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f4e5b61a7c63356fed4f3f361751fda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f4e5b61a7c63356fed4f3f361751fda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0bdf217d698bc75d1ca90b2abbe4da03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0bdf217d698bc75d1ca90b2abbe4da03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c99c5584b17fd36e7a28cdf48646b1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c99c5584b17fd36e7a28cdf48646b1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9440cc2d9a58bc87fe4c8507323372fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9440cc2d9a58bc87fe4c8507323372fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9eb47c8b9456af66343a9606e5b7b4a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/9eb47c8b9456af66343a9606e5b7b4a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2bc45047f4065dc97c191cd610a9fd38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2bc45047f4065dc97c191cd610a9fd38/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/5c7f1e5f6bab16ce91a011dfa6b80b4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/5c7f1e5f6bab16ce91a011dfa6b80b4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c8cf29c7c381b1ff5797a37cdef280db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c8cf29c7c381b1ff5797a37cdef280db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7adb59239b9cc6b15e6386fa12a93870/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7adb59239b9cc6b15e6386fa12a93870/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7036aea5844404bdf96e4ef62d30d933/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7036aea5844404bdf96e4ef62d30d933/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6b89ad536eda9a32c6b2f8681cc0dcc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6b89ad536eda9a32c6b2f8681cc0dcc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2f15f1e23e1d4d57b42dc156698e927f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2f15f1e23e1d4d57b42dc156698e927f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7899ff136c1141b61b94f368fc4f28c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7899ff136c1141b61b94f368fc4f28c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fffe68d8a814a3c86579be33fb4a409b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fffe68d8a814a3c86579be33fb4a409b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8ee36b926fae899651253a324940f801/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8ee36b926fae899651253a324940f801/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08a7f0acf5eae3d183b3e1ea7981d46a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08a7f0acf5eae3d183b3e1ea7981d46a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c766be9731e97afd1f928e6782e126e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c766be9731e97afd1f928e6782e126e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a1801e8dae3672ec7547d0f1677ff069/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a1801e8dae3672ec7547d0f1677ff069/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4dc84fb84f9b94a2129bbb58ea369d6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/4dc84fb84f9b94a2129bbb58ea369d6d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/77e11c0fd28c0dddcbf7441d75f86ecc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/77e11c0fd28c0dddcbf7441d75f86ecc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/79054f553063609b9d27ca6226f48a3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/79054f553063609b9d27ca6226f48a3c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2db0e6126e7cdabe5c7e8415d823a821/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2db0e6126e7cdabe5c7e8415d823a821/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/fd78e6702fa379dfdf3f9f49679a218c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/fd78e6702fa379dfdf3f9f49679a218c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c8d59e9c37cb2bd1331c5512b618abba/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c8d59e9c37cb2bd1331c5512b618abba/AndroidManifest.xml:20:5-44
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
