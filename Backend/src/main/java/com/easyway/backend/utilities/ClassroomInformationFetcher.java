@@ -147,10 +147,10 @@ public class ClassroomInformationFetcher {
 
 				Teacher teacher = makeTeacher(columns.get(8).text(), columns.get(9).text());
 				try {
-					String day = columns.get(3).text().split(" ")[0];
+					Day day = parseDay(columns.get(3).text().split(" ")[0]);
 					String interval = columns.get(3).text().split(" ")[1];
-					Lesson lesson = new Lesson(day, interval.split("-")[0], interval.split("-")[1], columns.get(4).text(), 
-							columns.get(1).text());
+					Lesson lesson = new Lesson(day, interval.split("-")[0], interval.split("-")[1], columns.get(1).text(), 
+							columns.get(4).text());
 					lesson.setRoom(room);
 					lesson.setTeacher(teacher);
 					lessonRepository.save(lesson);
@@ -163,6 +163,33 @@ public class ClassroomInformationFetcher {
 
 			}
 		}
+	}
+	
+	private Day parseDay(String day) {
+		Day result = null;
+		switch(day) {
+		   case "Hétfo" :
+			   result = Day.MONDAY;
+			   break;
+		   case "Kedd" :
+			   result = Day.TUESDAY;
+			   break;
+		   case "Szerda" :
+			   result = Day.WEDNESDAY;
+			   break; 
+		   case "Csütörtök" :
+			   result = Day.THURSDAY;
+			   break; 
+		   case "Péntek" :
+			   result = Day.FRIDAY;
+			   break; 
+		   case "Szombat" :
+			   result = Day.SATURDAY;
+			   break; 
+		   default : result = Day.SUNDAY;
+		
+		}
+		return result;
 	}
 	
 	private Teacher makeTeacher(String nameA, String nameB) {

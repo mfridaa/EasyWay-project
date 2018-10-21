@@ -21,7 +21,7 @@ public class Room {
 	@Column(name = "name")
 	private String name;
 
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Building building;
 	
 	@OneToMany(mappedBy="room")
