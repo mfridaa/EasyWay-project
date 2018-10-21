@@ -116,8 +116,8 @@ public class ClassroomInformationFetcher {
 				try {
 					Day day = parseDay(columns.get(3).text().split(" ")[0]);
 					String interval = columns.get(3).text().split(" ")[1];
-					Lesson lesson = new Lesson(day, interval.split("-")[0], interval.split("-")[1], columns.get(4).text(), 
-							columns.get(1).text());
+					Lesson lesson = new Lesson(day, interval.split("-")[0], interval.split("-")[1], columns.get(1).text(), 
+							columns.get(4).text());
 					lesson.setRoom(room);
 					lesson.setTeacher(teacher);
 					lessonRepository.save(lesson);

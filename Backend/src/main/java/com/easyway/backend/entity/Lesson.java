@@ -35,10 +35,10 @@ public class Lesson {
 	@Column(name = "name")
 	private String name;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Room room;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	private Teacher teacher;
 	
 	public Lesson() {}
