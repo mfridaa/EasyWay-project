@@ -16,6 +16,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.easyway.backend.Test;
@@ -51,6 +52,8 @@ public class ClassroomInformationFetcher {
 	private final String NORTBUILDING = "eszaki";
 	private final String SOUTHBILDING = "deli";
 	private final String CHEMICBUILDING = "kemia";
+
+	private static final int TENMINUTEINTERVAL =  600000;
 	
 	public String resultString;
 	
@@ -60,12 +63,14 @@ public class ClassroomInformationFetcher {
 	    add(new NameValuePair("limit", "1"));
 	    add(new NameValuePair("teremazon", "511"));
 	}};
-	
+
+
+	@Scheduled(fixedRate = TENMINUTEINTERVAL)
 	public void fetchNewDataAndSaveToDatabase() {
 		String nameUrlPostResult = fetchData(classroomNameUrl, null);
 		resultString = nameUrlPostResult;
 		processClassroomString(nameUrlPostResult);
-
+		logger.info("Fetching done");
 	}
 	
 	private void processClassroomString(String classroomString){

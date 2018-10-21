@@ -15,4 +15,10 @@ public class Authority {
 	
 	@Column
 	private String name;
+
+	public String getName() {
+		return name;
+	}
+	
+	
 }

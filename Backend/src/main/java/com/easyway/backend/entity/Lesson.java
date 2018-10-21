@@ -1,5 +1,7 @@
 package com.easyway.backend.entity;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import java.sql.Timestamp;
 
 import javax.persistence.Column;
@@ -81,7 +83,8 @@ public class Lesson {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	@JsonIgnore
 	public Room getRoom() {
 		return room;
 	}
@@ -89,7 +92,8 @@ public class Lesson {
 	public void setRoom(Room room) {
 		this.room = room;
 	}
-	
+
+	@JsonIgnore
 	public Teacher getTeacher() {
 		return teacher;
 	}

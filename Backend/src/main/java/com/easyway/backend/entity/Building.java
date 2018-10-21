@@ -41,5 +41,10 @@ public class Building {
 			classroom.setBuilding(this);
 		}
 	}
-	
+
+	public String getName() {
+		return name;
+	}
+
+
 }
