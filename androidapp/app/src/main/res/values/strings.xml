@@ -14,4 +14,8 @@
         completions."
     </string>
     <string name="skip_sign_in">Skip</string>
+    <string name="tokens" />
+    <string name="accesToken" />
+    <string name="refreshToken" />
+    <string name="title_activity_main">MainActivity</string>
 </resources>

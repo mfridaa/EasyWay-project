@@ -5,15 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Stream;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -37,7 +29,7 @@ public class User implements UserDetails {
 	@ManyToMany(cascade = { 
 	        CascadeType.PERSIST, 
 	        CascadeType.MERGE
-	    })
+	    },fetch = FetchType.EAGER)
 	    @JoinTable(name = "users_authorities",
 	        joinColumns = @JoinColumn(name = "user_id"),
 	        inverseJoinColumns = @JoinColumn(name = "auhority_id")
@@ -52,22 +44,16 @@ public class User implements UserDetails {
 		this.password = password;
 	}
 
-	/*
-	public String getEmail() {
-		return email;
+	public Long getId() {
+		return id;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-	 */
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
-		/*for (Authority authority : authorities) {
+		for (Authority authority : authorities) {
 			grantedAuthorities.add(()-> authority.getName());
-		}*/
-		grantedAuthorities.add(()->"ASD");
+		}
 		return grantedAuthorities;
 	}
 

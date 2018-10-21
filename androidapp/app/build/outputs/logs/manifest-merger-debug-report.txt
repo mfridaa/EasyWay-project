@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4be927bcbbbc1bb67ff69c7feb230496/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:2:1-11:12
+MERGED from [ca.mimic:oauth2library:2.4.2] /Users/Jana/.gradle/caches/transforms-1/files-1.1/oauth2library-2.4.2.aar/fbcd9d19527d4b8048ef4331c522c96c/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1eef967157faba8b4df99163dd018542/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5ae609d4791547d3ac79f1e9d2d42346/AndroidManifest.xml:17:1-22:12
@@ -35,20 +36,20 @@ MERGED from [com.android.support:interpolator:28.0.0] /Users/Jana/.gradle/caches
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2db0e6126e7cdabe5c7e8415d823a821/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/fd78e6702fa379dfdf3f9f49679a218c/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/Jana/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c8d59e9c37cb2bd1331c5512b618abba/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-33:12
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:1-38:12
 		INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:2:11-69
@@ -64,8 +65,12 @@ uses-permission#android.permission.READ_CONTACTS
 ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:8:5-72
 	android:name
 		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:8:22-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:9:22-64
 application
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:10:5-31:19
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:11:5-36:19
 MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/782d3be66821fced398616a75360be00/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:9:5-20
@@ -77,45 +82,53 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Jana/.gradle
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fcf9f886acc91098cd1ed84122e1c686/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:17:9-40
 activity#easyway.com.androidapp.SplashActivity
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:20:13-45
 	android:theme
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:20:13-47
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:21:13-47
 	android:name
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:18:13-43
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:19:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:25:27-74
 activity#easyway.com.androidapp.MapActivity
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:27:9-49
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:28:9-49
 	android:name
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:27:19-46
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:28:19-46
 activity#easyway.com.androidapp.LoginActivity
-ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:28:9-30:69
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:29:9-31:60
 	android:label
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:30:13-57
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:31:13-57
 	android:name
-		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:29:13-42
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:30:13-42
+activity#easyway.com.androidapp.MainActivity
+ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:32:9-35:68
+	android:label
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:34:13-56
+	android:theme
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml:33:13-41
 uses-sdk
 INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Jana/Documents/Elte/Msc1/SoftwareTechnology/EasyWay-project/androidapp/app/src/main/AndroidManifest.xml
@@ -126,6 +139,8 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4be927bcbbbc1bb67ff69c7feb230496/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Jana/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/516d9b50c71e24537abc1734c8251c5d/AndroidManifest.xml:5:5-7:41
+MERGED from [ca.mimic:oauth2library:2.4.2] /Users/Jana/.gradle/caches/transforms-1/files-1.1/oauth2library-2.4.2.aar/fbcd9d19527d4b8048ef4331c522c96c/AndroidManifest.xml:7:5-9:41
+MERGED from [ca.mimic:oauth2library:2.4.2] /Users/Jana/.gradle/caches/transforms-1/files-1.1/oauth2library-2.4.2.aar/fbcd9d19527d4b8048ef4331c522c96c/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2a7349bfc731b0c8e114160888423aa6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Jana/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/1eef967157faba8b4df99163dd018542/AndroidManifest.xml:20:5-44
