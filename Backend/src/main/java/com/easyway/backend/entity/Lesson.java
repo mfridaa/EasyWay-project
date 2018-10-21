@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.easyway.backend.utilities.Day;
+
 @Entity
 @Table(name="Lesson")
 public class Lesson {
@@ -19,7 +21,7 @@ public class Lesson {
 	private Long id;
 	
 	@Column(name = "day")
-	private String day;
+	private Day day;
 	
 	@Column(name = "start")
 	private String start;
@@ -41,7 +43,7 @@ public class Lesson {
 	
 	public Lesson() {}
 	
-	public Lesson(String day, String start, String end, String name, String weeks) {
+	public Lesson(Day day, String start, String end, String name, String weeks) {
 		super();
 		this.day = day;
 		this.start = start;
@@ -98,11 +100,11 @@ public class Lesson {
 		this.teacher = teacher;
 	}
 
-	public String getDay() {
+	public Day getDay() {
 		return day;
 	}
 
-	public void setDay(String day) {
+	public void setDay(Day day) {
 		this.day = day;
 	}
 
