@@ -18,7 +18,7 @@ public class Building {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name = "name")
+	@Column(name = "name", unique = true)
 	private String name;
 	
 	public Building() {}
@@ -41,5 +41,10 @@ public class Building {
 			classroom.setBuilding(this);
 		}
 	}
-	
+
+	public String getName() {
+		return name;
+	}
+
+
 }
